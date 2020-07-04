@@ -12,5 +12,10 @@ function slide2() {
 
 function slide3() {
   document.getElementById("motores").src = "./assets/evinrude.png"
+  setTimeout("slide4()",intervalo);
+}
+
+function slide4() {
+  document.getElementById("motores").src = "./assets/mercruiser.png"
   setTimeout("slide1()",intervalo);
 }
