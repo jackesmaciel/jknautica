@@ -3,6 +3,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .container-fluid {  
   width: 100%;
@@ -47,4 +60,79 @@
 }
 #sliders img {
   max-width: 100%;
+}
+
+.botaoWhatsapp {
+  z-index: 100;
+  position: fixed;
+  top: 70%;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.botaoWhatsapp:hover {
+  width: 45px;
+  height: 45px;
+}
+.botaoInstagram {
+  z-index: 100;
+  position: fixed;
+  top: 76%;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.botaoInstagram:hover {
+  width: 45px;
+  height: 45px;
+}
+.cards {
+  background: url("../assets/fundo.jpg") no-repeat;
+  background-size: cover;  
+}
+/* .bMercury {
+  background: url("../assets/mercury.jpg") no-repeat;
+  background-size: cover;
+}
+.bMercruiser {
+  background: url("../assets/mercruiser.jpg") no-repeat;
+  background-size: cover;
+}
+.bEvinrude {
+  background: url("../assets/evinrude.jpg") no-repeat;
+  background-size: cover;
+}
+.bYamaha {
+  background: url("../assets/yamaha.jpg") no-repeat;
+  background-size: cover;
+} */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.card .title {
+  font-size: 3vw;
+  color: #f11c1c;
+}
+.card p {
+  max-width: 400px;
+  font-size: 18px;
+  color: #fff;
+}
+.card img {
+  max-width: 300px;
+  max-height: 500px;
+}
+
+.box {
+  background: #292929;
+  border-radius: 20px;
+  padding: 20px;
 }
